@@ -1,6 +1,7 @@
 import React from "react";
 import "./NavBar.css";
 import { LuBookOpenCheck } from "react-icons/lu";
+import SearchBar from "../SearchBar/SearchBar";
 
 function Navbar({ searchQuery, setSearchQuery }) {
   return (
@@ -12,7 +13,7 @@ function Navbar({ searchQuery, setSearchQuery }) {
         </span>
         TodoList
       </h1>
-      <input type="text" placeholder="search.." />
+      <SearchBar searchQuery={searchQuery} setSearchQuery={setSearchQuery} />{" "}
     </nav>
   );
 }
