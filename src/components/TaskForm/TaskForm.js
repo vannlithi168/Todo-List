@@ -24,6 +24,7 @@ function App() {
   const [editId, setEditId] = useState(null);
   const taskCollectionRef = collection(db, "tasks");
   const [searchQuery, setSearchQuery] = useState("");
+  const [currentDate, setCurrentDate] = useState(new Date());
 
   const createTask = async (event) => {
     event.preventDefault();
@@ -36,7 +37,6 @@ function App() {
 
     setTasks([newTask, ...tasks]);
 
-    // Clear input fields
     setTitle("");
     setDescription("");
 
@@ -145,8 +145,18 @@ function App() {
     getTasks();
   }, []);
 
+  useEffect(() => {
+    const intervalId = setInterval(() => {
+      setCurrentDate(new Date());
+    }, 1000);
+
+    return () => {
+      clearInterval(intervalId);
+    };
+  }, []);
+
   return (
-    <div className="App">
+    <main className="App">
       <Navbar searchQuery={searchQuery} setSearchQuery={setSearchQuery} />
       <div className="container column">
         <h1>Adding Task</h1>
@@ -173,6 +183,7 @@ function App() {
 
       <div className="time">
         <h4>All tasks you have:</h4>
+        <h4 className="date">{currentDate.toLocaleString()}</h4>
         <h4>Completed Tasks:</h4>
       </div>
 
@@ -231,7 +242,7 @@ function App() {
             )}
           </section>
         ))}
-    </div>
+    </main>
   );
 }
 
