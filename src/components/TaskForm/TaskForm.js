@@ -182,9 +182,19 @@ function App() {
       </div>
 
       <div className="time">
-        <h4>All tasks you have:</h4>
+        <h4>
+          All tasks you have:{" "}
+          <span className="num">
+            {tasks.filter((task) => !task.completed).length}
+          </span>
+        </h4>
         <h4 className="date">{currentDate.toLocaleString()}</h4>
-        <h4>Completed Tasks:</h4>
+        <h4>
+          Completed Tasks:{" "}
+          <span className="num">
+            {tasks.filter((task) => task.completed).length}
+          </span>
+        </h4>
       </div>
 
       {/* Display tasks */}
