@@ -1,70 +1,87 @@
-# Getting Started with Create React App
+# Todo List Description
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This To-Do List application offers a robust and user-friendly interface for efficiently handling tasks. It empowers users to seamlessly create, modify, remove, and efficiently search for tasks, rendering it an indispensable tool for organizing and monitoring tasks and activities. Through its implementation, it illustrates prevalent paradigms and best practices for constructing a responsive web application using React and integrating it seamlessly with Firebase, showcasing the potential for creating efficient and modern web applications.
 
-## Available Scripts
+![Untitled](https://github.com/anb-hq/CnD_Vannlithi_Todolist/assets/137028238/5756c997-68a2-43d6-93e6-c688963b49d9)
 
-In the project directory, you can run:
+## **Prerequisites**
 
-### `npm start`
+List any prerequisites that users need to have installed on their system before they can run your project. This might include:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- Node.js
+- npm or Yarn
+- Firebase Server
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## **Installation**
 
-### `npm test`
+Provide step-by-step instructions on how to install and set up your project locally. Include code snippets and commands when necessary. For example:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+```bash
+bashCopy code
+# Clone the repository
+git clone https://github.com/yourusername/your-react-project.git
 
-### `npm run build`
+# Change directory to the project folder
+cd your-react-project
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+#install react icon to see icon in my project
+npm install react-icons --save
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+# Install dependencies
+npm install
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+```
 
-### `npm run eject`
+## **Usage**
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Explain how to run and use your React project. Include any configuration details, environment variables, or special instructions. For example:
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+```bash
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+# Start the development server
+npm start
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+```
 
-## Learn More
+## Feature
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+1. **Task Creation:**
+    - Users can create new tasks by entering a title and description in the input fields provided.
+    - When users click the "Add Task" button or press Enter, a new task is added to the list.
+2. **Task Display:**
+    - All tasks are displayed in a scrollable list in the main content area of the application.
+    - Each task includes its title, description, creation date, and an option to mark it as completed.
+3. **Task Completion:**
+    - Users can mark tasks as completed by clicking the circle icon next to a task.
+    - Completed tasks are visually distinguished with a strike-through style.
+4. **Task Edit:**
+    - Users can edit an existing task's title and description by clicking the clipboard icon (edit) next to the task.
+    - Editing a task opens a form with the current task details pre-filled, allowing users to make changes.
+    - Users can save the edited task by clicking the "Save" button or cancel the edit by clicking "Cancel."
+5. **Task Deletion:**
+    - Users can delete a task by clicking the trash icon next to the task.
+    - Deleting a task removes it from the list.
+6. **Task Count:**
+    - The application displays the total count of tasks that are not completed.
+    - It also shows the count of completed tasks.
+7. **Search Functionality:**
+    - Users can search for tasks by entering text in the search bar (provided by the **`Navbar`** component).
+    - Tasks that match the search query (case-insensitive) are displayed, while others are filtered out.
+8. **Date and Time Display:**
+    - The application displays the current date and time, updating every second.
+    - It provides a real-time reference to help users track when tasks were created.
+9. **Styling and Theming:**
+    - The application features styling and theming for a visually appealing interface.
+    - Completed tasks are styled differently from active tasks.
+    - Buttons and form elements have hover effects to improve user interaction.
+10. **Firebase Integration:**
+    - Integrates with Firebase Firestore for data storage.
+    - Store and retrieve tasks from a Firebase collection.
+11. **Interval Update:**
+    - The application uses a **`setInterval`** function to update the current date and time every second.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+# Other Relevant
 
-### Code Splitting
+To access my convention guide click link here:  [convention guide](https://nova-salsa-9b1.notion.site/Convention-Guide-863e8934ac7d4341acb5cc374e425266)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Figma: [UI design](https://www.figma.com/file/uMBTHZtXHa5Ge4LlmaLc68/TodoList?type=design&node-id=0%3A1&mode=design&t=1YpMdPER3a37c3jr-1)
