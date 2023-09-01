@@ -1,10 +1,10 @@
 import "./App.css";
-import Navbar from "./components/NavBar/NavBar";
+import TaskForm from "./components/TaskForm/TaskForm";
 
 function App() {
   return (
     <div className="App">
-      <Navbar />
+      <TaskForm />
     </div>
   );
 }
