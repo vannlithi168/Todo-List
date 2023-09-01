@@ -143,6 +143,7 @@ function App() {
     console.log(tasks);
 
     getTasks();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   useEffect(() => {
