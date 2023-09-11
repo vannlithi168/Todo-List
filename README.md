@@ -19,10 +19,10 @@ Provide step-by-step instructions on how to install and set up your project loca
 ```bash
 bashCopy code
 # Clone the repository
-git clone https://github.com/yourusername/your-react-project.git
+git clone https://github.com/anb-hq/CnD_Vannlithi_Todolist.git
 
 # Change directory to the project folder
-cd your-react-project
+cd Todolist
 
 #install react icon to see icon in my project
 npm install react-icons --save
@@ -34,7 +34,7 @@ npm install
 
 ## **Usage**
 
-Explain how to run and use your React project. Include any configuration details, environment variables, or special instructions. For example:
+Run react project:
 
 ```bash
 
@@ -85,3 +85,10 @@ npm start
 To access my convention guide click link here:  [convention guide](https://nova-salsa-9b1.notion.site/Convention-Guide-863e8934ac7d4341acb5cc374e425266)
 
 Figma: [UI design](https://www.figma.com/file/uMBTHZtXHa5Ge4LlmaLc68/TodoList?type=design&node-id=0%3A1&mode=design&t=1YpMdPER3a37c3jr-1)
+
+# Reference
+
+1. Firebase [Firebase Doc](https://firebase.google.com/docs/projects/learn-more?hl=en&authuser=0&_gl=1*1ggzcr8*_ga*MTQzOTU4NDM5NS4xNjg3MzMwMTkw*_ga_CW55HF8NVT*MTY5NDQwMzMwMS4zMy4xLjE2OTQ0MDQ2ODcuMC4wLjA.)
+2. React [Udemy Course](https://anbschool.udemy.com/course/react-redux/learn/lecture/34694280#overview)
+3. Using React with Firebase [Link](https://anbschool.udemy.com/course/build-web-apps-with-react-firebase/learn/lecture/29067546#overview)
+4. Other source on Youtube, Google, Document, etc.
